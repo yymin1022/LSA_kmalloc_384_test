@@ -13,6 +13,7 @@ static void *test_mem_ptr = NULL;
 static int __init test_module_init(void)
 {
     printk(KERN_INFO "384 TestModule: Loading\n");
+    printk(KERN_INFO "384 TestModule: KMALLOC_MIN_SIZE is %d\n", KMALLOC_MIN_SIZE);
 
     test_mem_ptr = kmalloc(TEST_MEM_SIZE, GFP_KERNEL);
 
