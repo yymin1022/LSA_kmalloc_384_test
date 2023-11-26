@@ -25,6 +25,7 @@ static int __init test_module_init(void)
     }
 
     printk(KERN_INFO "384 TestModule: Memory allocated at %p\n", test_mem_ptr);
+    printk(KERN_INFO "384 TestModule: Allocation got %zu bytes!\n", ksize(test_mem_ptr));
     return 0;
 }
 
