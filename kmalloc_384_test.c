@@ -29,7 +29,7 @@ static int __init test_module_init(void)
 	{
 		test_mem_ptr[i] = kmalloc(TEST_MEM_SIZE, GFP_KERNEL);
 		alloc_size += ksize(test_mem_ptr[i]);
-		printk(KERN_INFO "384 YestModule: Allocated %zu bytes for %d index\n", alloc_size, i);
+		printk(KERN_INFO "384 TestModule: Allocated %zu bytes for %d index\n", alloc_size, i);
 	}
 
 	printk(KERN_INFO "384 TestModule: Total Allocation got %zu bytes!\n", alloc_size);
